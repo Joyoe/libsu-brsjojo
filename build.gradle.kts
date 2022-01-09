@@ -70,7 +70,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             artifact(javadocJar.get())
-            groupId = "com.github.topjohnwu"
+            groupId = "com.github.joyoe"
             artifactId = "docs"
         }
     }

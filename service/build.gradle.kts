@@ -8,7 +8,7 @@ plugins {
     id("com.github.dcendents.android-maven")
 }
 
-group="com.github.topjohnwu.libsu"
+group="com.github.joyoe.libsu"
 
 android {
     defaultConfig {
@@ -24,7 +24,7 @@ android.libraryVariants.all {
                 "build-tools", android.buildToolsVersion, d8Command)
             val classFile = Paths.get(buildDir.path, "intermediates",
                 "javac", this@all.name, "classes",
-                "com", "topjohnwu", "superuser", "internal", "joker", "IPCMain.class")
+                "com", "topjohnwu", "brightsight", "superuser", "internal", "joker", "IPCMain.class")
             val output = Paths.get(
                 android.sourceSets.getByName("main").assets.srcDirs.first().path,
                 "main.jar")
